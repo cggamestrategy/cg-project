@@ -2,376 +2,607 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
 </head>
 
+<!-- CSS only -->
+<link rel="stylesheet" href="search.css" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+<!-- JavaScript Bundle with Popper 5.2.2 -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> -->
+
+<!-- Bootstrap 4.0.0 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="https://unpkg.com/bootstrap-table@1.21.1/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+
+
+<link rel="stylesheet" href="bootstrap.scss">
+
 <body>
-    <table cellpadding="2" cellspacing="0" border="1" bordercolor="#361c00" align="center" class="ke-zeroborder"
-        style="width: 800px; background-color: rgb(249, 241, 202);">
-        <tbody>
-            <tr>
-                <td height="46" width="20%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                        style="color: rgb(255, 255, 255);"><span
-                            style="font-size: 24px; font-family: 微软雅黑;">名稱（頭飾）</span></span></td>
-                <td width="40%" class="xl65" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                        style="color: rgb(255, 255, 255); font-size: 24px; font-family: 微软雅黑;">屬性</span></td>
-                <td width="256" class="10%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                        style="color: rgb(255, 255, 255); font-size: 24px;">所需材料與數量</span><br></td>
-                <td width="20%" style="text-align: center; background-color: rgb(122, 64, 0);"><span><span
-                            style="font-size: 24px;">外觀</span></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰1階</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+150；防禦+10；回復+5；攻擊+30；
-                        敏捷+20；必殺+10</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">/</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/56033e6e1712df4fd04f2489289ffe24.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰2階</span></td>
-                <td style="text-align: center;"><span
-                        style="font-size: 24px;">生命+（151~200）；防禦+（6~10）；回復+（6~10）；攻擊+（31~50）；
-                        敏捷+（21~25）；必殺+（11~15）</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">怒氣火焰1階*3<br>
-                        黃色火焰*10小閃電*30<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/8501b29a7ebd49336314a2d4510a3ba9.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰3階</span></td>
-                <td style="text-align: center;"><span
-                        style="font-size: 24px;">生命+（201~250）；防禦+（11~15）；回復+（11~15）；攻擊+（51~90）；
-                        敏捷+（26~30）；必殺+（16~20）</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">怒氣火焰2階*3<br>
-                        紅色火焰*10小閃電*30<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/3eda5540ed570c96c3189ee29e2c3252.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰4階</span></td>
-                <td style="text-align: center;"><span
-                        style="font-size: 24px;">生命+（251~300）；防禦+（16~20）；回復+（16~20）；攻擊+（91~120）；
-                        敏捷+（31~35）；必殺+（21~25）</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">怒氣火焰3階*3<br>
-                        藍色火焰*10大閃電*30<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/899a80d8f8e7ab5f12c1c5295f55a243.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰5階</span></td>
-                <td style="text-align: center;"><span
-                        style="font-size: 24px;">生命+（301~350）；防禦+（21~30）；回復+（21~30）；攻擊+（121~150）；
-                        敏捷+（36~45）；必殺+（26~30）</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">怒氣火焰4階*3<br>
-                        銀色火焰*10大閃電*30<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/3b20708a7f36bbadf10ee3c476046cc6.gif"
-                            alt=""></span></td>
-            </tr>
-        <tbody>
-            <tr>
-                <td height="46" width="20%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                        style="color: rgb(255, 255, 255);"><span
-                            style="font-size: 24px; font-family: 微软雅黑;">名稱（頭飾）</span></span></td>
-                <td width="40%" class="xl65" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                        style="color: rgb(255, 255, 255); font-size: 24px; font-family: 微软雅黑;">屬性</span></td>
-                <td width="256" class="10%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                        style="color: rgb(255, 255, 255); font-size: 24px;">所需材料與數量</span><br></td>
-                <td width="20%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                        style="color: rgb(255, 255, 255); font-size: 24px; font-family: 微软雅黑;">外觀</span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">元素原石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+250 防禦+75 攻擊+40 敏捷+15 回復+15</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">/</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/542ba044bab1c52b6daaecda571efe05.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">大地靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+350 防禦+150 地屬性+2</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">元素原石*1<br>
-                        大地玉石*30<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/556287f911112871fe184cc96a50b8fe.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">寒冰靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+350 回復+30 水屬性+2</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">元素原石*1<br>
-                        寒冰玉石*30<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/4c9a5794c8c60a0d57bc3bbb3d010607.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">火焰靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+350 攻擊+80 火屬性+2</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">元素原石*1<br>
-                        火焰玉石*30<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/d9ed7aa63a720d75f072e4848f3924dd.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">烈風靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+350 敏捷+30 風屬性+2</span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">元素原石*1<br>
-                        烈風玉石*30<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/930760e274309abffc6af6116e0495d0.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">地水精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 回復+40 地屬性+2 水屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">大地靈石*2<br>
-                        寒冰靈石*1<br>
-                        地水融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/a94e4a0db25c71886e55d6cfb8e7861e.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">地火精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 攻擊+100 地屬性+2 火屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">大地靈石*2<br>
-                        火焰靈石*1<br>
-                        地火融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/330f04ecf6b5e6fb62b8853619098efa.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">地風精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 敏捷+40 地屬性+2 風屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">大地靈石*2<br>
-                        烈風靈石*1<br>
-                        地風融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/589cdcc8c9b616c52cadde7314284b4a.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">水地精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 回復+40 水屬性+2 地屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">寒冰靈石*2<br>
-                        大地靈石*1<br>
-                        地水融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/99392e2052b5e8346b62abf355fcd8b8.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">水火精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 攻擊+100 回復+40 水屬性+2 火屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">寒冰靈石*2<br>
-                        火焰靈石*1<br>
-                        水火融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/19ba1d510d07c96af357cecf33ae2d46.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">水風精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 回復+40 水屬性+2 風屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">寒冰靈石*2<br>
-                        烈風靈石*1<br>
-                        水風融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/d1afb5c24c586895b2cbca6e80385ce2.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">火地精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 攻擊+100 火屬性+2 地屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">火焰靈石*2<br>
-                        大地靈石*1<br>
-                        地火融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/9cd5b36e762da94bd85799a919fbbf1f.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">火水精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 回復+40 攻擊+100 火屬性+2 水屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">火焰靈石*2<br>
-                        寒冰靈石*1<br>
-                        水火融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/398b6587d7794f9c78a36ff5ba1bcbf9.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">火風精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 攻擊+100 火屬性+2 風屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">火焰靈石*2<br>
-                        烈風靈石*1<br>
-                        火風融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/5034620028a4d750c91a09e305a803bd.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">風地精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 防禦+200 風屬性+2 地屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">烈風靈石*2<br>
-                        大地靈石*1<br>
-                        地風融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/d1d1fa4967530e4ea51abbc7ecf0e57b.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">風水精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 回復+40 風屬性+2 水屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">烈風靈石*2<br>
-                        寒冰靈石*1<br>
-                        水風融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/f808d415e2a8c92161d940ca450bda86.gif"
-                            alt=""></span></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;"><span style="font-size: 24px;">風火精靈石</span></td>
-                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 攻擊+100 風屬性+2 火屬性+1</span>
-                </td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;">烈風靈石*2<br>
-                        火焰靈石*1<br>
-                        火風融合玉*3<br></span></td>
-                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
-                            src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/b7845e49ba61d3b4856db78c4f160492.gif"
-                            alt=""></span></td>
-            </tr>
-            <table cellpadding="2" cellspacing="0" border="1" bordercolor="#361c00" align="center" class="ke-zeroborder"
+        <!-- Header -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">魔力寶貝超強官網</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                        <!-- 還沒做完 -->
+                                        <span><a class="nav-link" href="index.html">首頁</a></span>
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <!-- 做完 -->
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                採集資料
+                                        </a>
+                                        <!-- .dropdown-menu 下拉選單內容 -->
+                                        <div style="padding: 0; margin:0;" class="dropdown-menu"
+                                                aria-labelledby="navbarDropdownMenuLink1">
+                                                <a class="dropdown-item" href="collect_data.html?type=挖礦">挖礦</a>
+                                                <a class="dropdown-item" href="collect_data.html?type=狩獵">狩獵</a>
+                                                <a class="dropdown-item" href="collect_data.html?type=伐木">伐木</a>
+                                                <a class="dropdown-item"
+                                                        href="collect_data.html?type=製作用布販賣點">製作用布販賣點</a>
+                                        </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                製作資料
+                                        </a>
+                                        <!-- .dropdown-menu 下拉選單內容 -->
+                                        <div style="padding: 0; margin:0;" class="dropdown-menu"
+                                                aria-labelledby="navbarDropdownMenuLink">
+                                                <h6 class="dropdown-title"><b>重型武器-橫掃競技場</b></h6>
+                                                <a class="dropdown-item" href="production_information.html?type=劍">劍</a>
+                                                <a class="dropdown-item" href="production_information.html?type=斧">斧</a>
+                                                <a class="dropdown-item" href="production_information.html?type=槍">槍</a>
+                                                <a class="dropdown-item" href="production_information.html?type=弓">弓</a>
+                                                <h6 class="dropdown-title"><b>輕型武器-打爆冰樹</b></h6>
+                                                <a class="dropdown-item" href="#">小刀</a>
+                                                <a class="dropdown-item" href="#">杖</a>
+                                                <a class="dropdown-item" href="#">迴力</a>
+                                                <h6 class="dropdown-title"><b>重型防具-讓三龍害怕</b></h6>
+                                                <a class="dropdown-item" href="#">盔</a>
+                                                <a class="dropdown-item" href="#">鎧甲</a>
+                                                <a class="dropdown-item" href="#">靴子</a>
+                                                <a class="dropdown-item" href="#">盾</a>
+                                                <h6 class="dropdown-title"><b>輕型防具-真的輕</b></h6>
+                                                <a class="dropdown-item" href="#">帽子</a>
+                                                <a class="dropdown-item" href="#">衣服</a>
+                                                <a class="dropdown-item" href="#">鞋子</a>
+                                                <a class="dropdown-item" href="#">袍</a>
+                                                <h6 class="dropdown-title"><b>仙丹妙藥</b></h6>
+                                                <a class="dropdown-item" href="#">料理</a>
+                                                <a class="dropdown-item" href="#">藥水</a>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                技能資料
+                                        </a>
+                                        <!-- .dropdown-menu 下拉選單內容 -->
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="#">人物技能</a>
+                                                <a class="dropdown-item" href="#">人物技能(New)</a>
+                                                <a class="dropdown-item" href="#">寵物技能</a>
+                                                <a class="dropdown-item" href="#">技能屋進入証</a>
+                                                <a class="dropdown-item" href="#">寵物技能屋</a>
+                                                <a class="dropdown-item" href="#">耗魔變化道具</a>
+                                        </div>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="pet_information.html">寵物資料</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="role_related.html">角色相關</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="pet_equipment.html">寵物裝備資料</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="prop_library.html">初心道具</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="game_task.html">遊戲任務</a>
+
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="gashapon_library.html">扭蛋資料</a>
+                                </li>
+
+                        </ul>
+                </div>
+        </nav>
+        <table cellpadding="2" cellspacing="0" border="1" bordercolor="#361c00" align="center" class="ke-zeroborder"
                 style="width: 800px; background-color: rgb(249, 241, 202);">
                 <tbody>
-                    <tr>
-                        <td height="46" colspan="3" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                                style="color: rgb(255, 255, 255); font-size: 24px; font-family: 微软雅黑;">21週年慶寵物島稱號</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="46" width="33%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                                style="color: rgb(255, 255, 255); font-size: 24px;">物品名稱</span></td>
-                        <td width="33%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                                style="color: rgb(255, 255, 255); font-size: 24px;">屬性</span></td>
-                        <td width="33%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                                style="color: rgb(255, 255, 255); font-size: 24px;">外觀</span></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;"><span style="font-size: 24px;">21週年寵物至尊</span></td>
-                        <td style="text-align: center;"><span style="font-size: 24px;">生命+500，魔力+500， 防禦+30 ， 回復+30，
-                                命中+15，閃避+15，必殺+15，反擊+15</span></td>
-                        <td style="text-align: center;"><img
-                                src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/120bc17f44a0abdf3606947b0a4efce2.png"
-                                alt=""><br></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;"><span style="font-size: 24px;">21週年寵物宗師</span></td>
-                        <td style="text-align: center;"><span style="font-size: 24px;">生命+350，魔力+350， 防禦+20 ，回復+20
-                                ，命中+10，閃避+10，必殺+10，反擊+10<span
-                                    style="color: rgb(23, 26, 29); font-family: &quot;font-size:14px&quot;; background-color: rgb(255, 255, 255);"></span></span>
-                        </td>
-                        <td style="text-align: center;"><img
-                                src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/3de7dc1eb6d71e35c441f4e4918c48d9.png"
-                                alt=""><br></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;"><span style="font-size: 24px;">21週年寵物大師</span></td>
-                        <td style="text-align: center;"><span style="font-size: 24px;">生命+200， 魔力+200， 防禦+15 ， 回復+15
-                                ，命中+8，閃避+8，必殺+8，反擊+8</span></td>
-                        <td style="text-align: center;"><span style="font-size: 24px;"><img
-                                    src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/3de188b6ef046e7bafc5ba3e99fad9d3.png"
-                                    alt=""></span></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;"><span style="font-size: 24px;">21週年寵物高手</span></td>
-                        <td style="text-align: center;"><span style="font-size: 24px;">生命+100， 魔力+100， 防禦+8， 回復+8
-                                ，命中+5，閃避+5，必殺+5，反擊+5</span></td>
-                        <td style="text-align: center;"><span style="font-size: 24px;"><img
-                                    src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/d9c20126027d934aff5a131550c0058c.png"
-                                    alt=""></span></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;"><span style="font-size: 24px;">21週年寵物新手</span></td>
-                        <td style="text-align: center;"><span style="font-size: 24px;">生命+50 ，魔力+50 ，防禦+5， 回復+5
-                                ，命中+2，閃避+2，必殺+2，反擊+2</span></td>
-                        <td style="text-align: center;"><span style="font-size: 24px;"><img
-                                    src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/1c6830ac14910ad65f3f9957a1076385.png"
-                                    alt=""></span></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;"></td>
-                        <td style="text-align: center;"></td>
-                        <td style="text-align: center;"><br></td>
-                    </tr>
+                        <tr>
+                                <td height="46" width="20%"
+                                        style="text-align: center; background-color: rgb(122, 64, 0);"><span
+                                                style="color: rgb(255, 255, 255);"><span
+                                                        style="font-size: 24px; font-family: 微软雅黑;">名稱（頭飾）</span></span>
+                                </td>
+                                <td width="40%" class="xl65"
+                                        style="text-align: center; background-color: rgb(122, 64, 0);"><span
+                                                style="color: rgb(255, 255, 255); font-size: 24px; font-family: 微软雅黑;">屬性</span>
+                                </td>
+                                <td width="256" class="10%"
+                                        style="text-align: center; background-color: rgb(122, 64, 0);"><span
+                                                style="color: rgb(255, 255, 255); font-size: 24px;">所需材料與數量</span><br>
+                                </td>
+                                <td width="20%" style="text-align: center; background-color: rgb(122, 64, 0);">
+                                        <span><span style="font-size: 24px;">外觀</span></span>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰1階</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+150；防禦+10；回復+5；攻擊+30；
+                                                敏捷+20；必殺+10</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">/</span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/56033e6e1712df4fd04f2489289ffe24.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰2階</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-size: 24px;">生命+（151~200）；防禦+（6~10）；回復+（6~10）；攻擊+（31~50）；
+                                                敏捷+（21~25）；必殺+（11~15）</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">怒氣火焰1階*3<br>
+                                                黃色火焰*10小閃電*30<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/8501b29a7ebd49336314a2d4510a3ba9.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰3階</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-size: 24px;">生命+（201~250）；防禦+（11~15）；回復+（11~15）；攻擊+（51~90）；
+                                                敏捷+（26~30）；必殺+（16~20）</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">怒氣火焰2階*3<br>
+                                                紅色火焰*10小閃電*30<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/3eda5540ed570c96c3189ee29e2c3252.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰4階</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-size: 24px;">生命+（251~300）；防禦+（16~20）；回復+（16~20）；攻擊+（91~120）；
+                                                敏捷+（31~35）；必殺+（21~25）</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">怒氣火焰3階*3<br>
+                                                藍色火焰*10大閃電*30<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/899a80d8f8e7ab5f12c1c5295f55a243.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">怒氣火焰5階</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-size: 24px;">生命+（301~350）；防禦+（21~30）；回復+（21~30）；攻擊+（121~150）；
+                                                敏捷+（36~45）；必殺+（26~30）</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">怒氣火焰4階*3<br>
+                                                銀色火焰*10大閃電*30<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/3b20708a7f36bbadf10ee3c476046cc6.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                <tbody>
+                        <tr>
+                                <td height="46" width="20%"
+                                        style="text-align: center; background-color: rgb(122, 64, 0);"><span
+                                                style="color: rgb(255, 255, 255);"><span
+                                                        style="font-size: 24px; font-family: 微软雅黑;">名稱（頭飾）</span></span>
+                                </td>
+                                <td width="40%" class="xl65"
+                                        style="text-align: center; background-color: rgb(122, 64, 0);"><span
+                                                style="color: rgb(255, 255, 255); font-size: 24px; font-family: 微软雅黑;">屬性</span>
+                                </td>
+                                <td width="256" class="10%"
+                                        style="text-align: center; background-color: rgb(122, 64, 0);"><span
+                                                style="color: rgb(255, 255, 255); font-size: 24px;">所需材料與數量</span><br>
+                                </td>
+                                <td width="20%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
+                                                style="color: rgb(255, 255, 255); font-size: 24px; font-family: 微软雅黑;">外觀</span>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">元素原石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+250 防禦+75 攻擊+40 敏捷+15
+                                                回復+15</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">/</span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/542ba044bab1c52b6daaecda571efe05.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">大地靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+350 防禦+150
+                                                地屬性+2</span></td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">元素原石*1<br>
+                                                大地玉石*30<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/556287f911112871fe184cc96a50b8fe.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">寒冰靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+350 回復+30 水屬性+2</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">元素原石*1<br>
+                                                寒冰玉石*30<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/4c9a5794c8c60a0d57bc3bbb3d010607.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">火焰靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+350 攻擊+80 火屬性+2</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">元素原石*1<br>
+                                                火焰玉石*30<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/d9ed7aa63a720d75f072e4848f3924dd.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">烈風靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+350 敏捷+30 風屬性+2</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">元素原石*1<br>
+                                                烈風玉石*30<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/930760e274309abffc6af6116e0495d0.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">地水精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 回復+40 地屬性+2
+                                                水屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">大地靈石*2<br>
+                                                寒冰靈石*1<br>
+                                                地水融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/a94e4a0db25c71886e55d6cfb8e7861e.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">地火精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 攻擊+100
+                                                地屬性+2 火屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">大地靈石*2<br>
+                                                火焰靈石*1<br>
+                                                地火融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/330f04ecf6b5e6fb62b8853619098efa.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">地風精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 敏捷+40 地屬性+2
+                                                風屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">大地靈石*2<br>
+                                                烈風靈石*1<br>
+                                                地風融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/589cdcc8c9b616c52cadde7314284b4a.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">水地精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 回復+40 水屬性+2
+                                                地屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">寒冰靈石*2<br>
+                                                大地靈石*1<br>
+                                                地水融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/99392e2052b5e8346b62abf355fcd8b8.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">水火精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 攻擊+100 回復+40 水屬性+2
+                                                火屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">寒冰靈石*2<br>
+                                                火焰靈石*1<br>
+                                                水火融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/19ba1d510d07c96af357cecf33ae2d46.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">水風精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 回復+40 水屬性+2
+                                                風屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">寒冰靈石*2<br>
+                                                烈風靈石*1<br>
+                                                水風融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/d1afb5c24c586895b2cbca6e80385ce2.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">火地精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 防禦+200 攻擊+100
+                                                火屬性+2 地屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">火焰靈石*2<br>
+                                                大地靈石*1<br>
+                                                地火融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/9cd5b36e762da94bd85799a919fbbf1f.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">火水精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 回復+40 攻擊+100 火屬性+2
+                                                水屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">火焰靈石*2<br>
+                                                寒冰靈石*1<br>
+                                                水火融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/398b6587d7794f9c78a36ff5ba1bcbf9.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">火風精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 攻擊+100 火屬性+2
+                                                風屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">火焰靈石*2<br>
+                                                烈風靈石*1<br>
+                                                火風融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/5034620028a4d750c91a09e305a803bd.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">風地精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 防禦+200 風屬性+2
+                                                地屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">烈風靈石*2<br>
+                                                大地靈石*1<br>
+                                                地風融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/d1d1fa4967530e4ea51abbc7ecf0e57b.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">風水精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 回復+40 風屬性+2
+                                                水屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">烈風靈石*2<br>
+                                                寒冰靈石*1<br>
+                                                水風融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/f808d415e2a8c92161d940ca450bda86.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <tr>
+                                <td style="text-align: center;"><span style="font-size: 24px;">風火精靈石</span></td>
+                                <td style="text-align: center;"><span style="font-size: 24px;">生命+400 敏捷+40 攻擊+100 風屬性+2
+                                                火屬性+1</span>
+                                </td>
+                                <td style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24px;">烈風靈石*2<br>
+                                                火焰靈石*1<br>
+                                                火風融合玉*3<br></span></td>
+                                <td style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 24px;"><img
+                                                        src="https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/b7845e49ba61d3b4856db78c4f160492.gif"
+                                                        alt=""></span></td>
+                        </tr>
+                        <table cellpadding="2" cellspacing="0" border="1" bordercolor="#361c00" align="center"
+                                class="ke-zeroborder" style="width: 800px; background-color: rgb(249, 241, 202);">
+                                <tbody>
+                                        <tr>
+                                                <td height="46" colspan="3"
+                                                        style="text-align: center; background-color: rgb(122, 64, 0);">
+                                                        <span
+                                                                style="color: rgb(255, 255, 255); font-size: 24px; font-family: 微软雅黑;">21週年慶寵物島稱號</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td height="46" width="33%"
+                                                        style="text-align: center; background-color: rgb(122, 64, 0);">
+                                                        <span
+                                                                style="color: rgb(255, 255, 255); font-size: 24px;">物品名稱</span>
+                                                </td>
+                                                <td width="33%"
+                                                        style="text-align: center; background-color: rgb(122, 64, 0);">
+                                                        <span
+                                                                style="color: rgb(255, 255, 255); font-size: 24px;">屬性</span>
+                                                </td>
+                                                <td width="33%"
+                                                        style="text-align: center; background-color: rgb(122, 64, 0);">
+                                                        <span
+                                                                style="color: rgb(255, 255, 255); font-size: 24px;">外觀</span>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td style="text-align: center;"><span
+                                                                style="font-size: 24px;">21週年寵物至尊</span></td>
+                                                <td style="text-align: center;"><span
+                                                                style="font-size: 24px;">生命+500，魔力+500， 防禦+30 ， 回復+30，
+                                                                命中+15，閃避+15，必殺+15，反擊+15</span></td>
+                                                <td style="text-align: center;"><img
+                                                                src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/120bc17f44a0abdf3606947b0a4efce2.png"
+                                                                alt=""><br></td>
+                                        </tr>
+                                        <tr>
+                                                <td style="text-align: center;"><span
+                                                                style="font-size: 24px;">21週年寵物宗師</span></td>
+                                                <td style="text-align: center;"><span
+                                                                style="font-size: 24px;">生命+350，魔力+350， 防禦+20 ，回復+20
+                                                                ，命中+10，閃避+10，必殺+10，反擊+10<span
+                                                                        style="color: rgb(23, 26, 29); font-size:14px; background-color: rgb(255, 255, 255);"></span></span>
+                                                </td>
+                                                <td style="text-align: center;"><img
+                                                                src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/3de7dc1eb6d71e35c441f4e4918c48d9.png"
+                                                                alt=""><br></td>
+                                        </tr>
+                                        <tr>
+                                                <td style="text-align: center;"><span
+                                                                style="font-size: 24px;">21週年寵物大師</span></td>
+                                                <td style="text-align: center;"><span style="font-size: 24px;">生命+200，
+                                                                魔力+200， 防禦+15 ， 回復+15
+                                                                ，命中+8，閃避+8，必殺+8，反擊+8</span></td>
+                                                <td style="text-align: center;"><span style="font-size: 24px;"><img
+                                                                        src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/3de188b6ef046e7bafc5ba3e99fad9d3.png"
+                                                                        alt=""></span></td>
+                                        </tr>
+                                        <tr>
+                                                <td style="text-align: center;"><span
+                                                                style="font-size: 24px;">21週年寵物高手</span></td>
+                                                <td style="text-align: center;"><span style="font-size: 24px;">生命+100，
+                                                                魔力+100， 防禦+8， 回復+8
+                                                                ，命中+5，閃避+5，必殺+5，反擊+5</span></td>
+                                                <td style="text-align: center;"><span style="font-size: 24px;"><img
+                                                                        src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/d9c20126027d934aff5a131550c0058c.png"
+                                                                        alt=""></span></td>
+                                        </tr>
+                                        <tr>
+                                                <td style="text-align: center;"><span
+                                                                style="font-size: 24px;">21週年寵物新手</span></td>
+                                                <td style="text-align: center;"><span style="font-size: 24px;">生命+50
+                                                                ，魔力+50 ，防禦+5， 回復+5
+                                                                ，命中+2，閃避+2，必殺+2，反擊+2</span></td>
+                                                <td style="text-align: center;"><span style="font-size: 24px;"><img
+                                                                        src="https://files.originmood.com/pic/d1722bcd88dcce3d7abe1a0cd7346b44/picture/1c6830ac14910ad65f3f9957a1076385.png"
+                                                                        alt=""></span></td>
+                                        </tr>
+                                        <tr>
+                                                <td style="text-align: center;"></td>
+                                                <td style="text-align: center;"></td>
+                                                <td style="text-align: center;"><br></td>
+                                        </tr>
+                                </tbody>
+                                <table cellpadding="2" cellspacing="0" border="1" bordercolor="#361c00" align="center"
+                                        class="ke-zeroborder"
+                                        style="width: 800px; background-color: rgb(249, 241, 202);">
+                                        <tbody>
+                                                <tr>
+                                                        <td height="46" colspan="3"
+                                                                style="text-align: center; background-color: rgb(122, 64, 0);">
+                                                                <span><span style="font-size: 24px;">頭飾</span></span>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td height="46" width="33%"
+                                                                style="text-align: center; background-color: rgb(122, 64, 0);">
+                                                                <span
+                                                                        style="color: rgb(255, 255, 255); font-size: 24px;">物品名稱</span>
+                                                        </td>
+                                                        <td width="33%"
+                                                                style="text-align: center; background-color: rgb(122, 64, 0);">
+                                                                <span
+                                                                        style="color: rgb(255, 255, 255); font-size: 24px;">屬性</span>
+                                                        </td>
+                                                        <td width="33%"
+                                                                style="text-align: center; background-color: rgb(122, 64, 0);">
+                                                                <span
+                                                                        style="color: rgb(255, 255, 255); font-size: 24px;">外觀</span>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td style="text-align: center;"><span
+                                                                        style="font-size: 24px;">一週年永恆勇者頭飾</span></td>
+                                                        <td style="text-align: center;"><span
+                                                                        style="font-size: 24px;">生命+250；回復+10；攻擊+30；必殺+10；命中+10；耐久：200~250</span>
+                                                        </td>
+                                                        <td style="text-align: center;"><img
+                                                                        src="https://files.originmood.com/pic/83dd60f7543b1a88121a7cbf8581afbc/picture/dadfeac50b32e4a4cb108475be8f6c5d.gif"
+                                                                        alt=""><br></td>
+                                                </tr>
+                                                <tr>
+                                                        <td style="text-align: center;"><span
+                                                                        style="font-size: 24px;">一週年初心勇者頭飾</span></td>
+                                                        <td style="text-align: center;"><span
+                                                                        style="font-size: 24px;">生命+250 魔力+150 閃避+10
+                                                                        反擊+10
+                                                                        防禦+50 敏捷+30；<span
+                                                                                style="font-size: 24px; background-color: rgb(249, 241, 202);">耐久：</span><span
+                                                                                style="font-size: 24px; background-color: rgb(249, 241, 202);">200~250</span><span
+                                                                                style="color: rgb(23, 26, 29); font-size:14px; background-color: rgb(255, 255, 255);"></span></span>
+                                                        </td>
+                                                        <td style="text-align: center;"><img
+                                                                        src="https://files.originmood.com/pic/83dd60f7543b1a88121a7cbf8581afbc/picture/cb76da526f68c804e666f0a07b858bee.gif"
+                                                                        alt=""></td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </table>
                 </tbody>
-                <table cellpadding="2" cellspacing="0" border="1" bordercolor="#361c00" align="center"
-                    class="ke-zeroborder" style="width: 800px; background-color: rgb(249, 241, 202);">
-                    <tbody>
-                        <tr>
-                            <td height="46" colspan="3" style="text-align: center; background-color: rgb(122, 64, 0);">
-                                <span><span style="font-size: 24px;">頭飾</span></span></td>
-                        </tr>
-                        <tr>
-                            <td height="46" width="33%" style="text-align: center; background-color: rgb(122, 64, 0);">
-                                <span style="color: rgb(255, 255, 255); font-size: 24px;">物品名稱</span></td>
-                            <td width="33%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                                    style="color: rgb(255, 255, 255); font-size: 24px;">屬性</span></td>
-                            <td width="33%" style="text-align: center; background-color: rgb(122, 64, 0);"><span
-                                    style="color: rgb(255, 255, 255); font-size: 24px;">外觀</span></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;"><span style="font-size: 24px;">一週年永恆勇者頭飾</span></td>
-                            <td style="text-align: center;"><span
-                                    style="font-size: 24px;">生命+250；回復+10；攻擊+30；必殺+10；命中+10；耐久：200~250</span></td>
-                            <td style="text-align: center;"><img
-                                    src="https://files.originmood.com/pic/83dd60f7543b1a88121a7cbf8581afbc/picture/dadfeac50b32e4a4cb108475be8f6c5d.gif"
-                                    alt=""><br></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;"><span style="font-size: 24px;">一週年初心勇者頭飾</span></td>
-                            <td style="text-align: center;"><span style="font-size: 24px;">生命+250 魔力+150 閃避+10 反擊+10
-                                    防禦+50 敏捷+30；<span
-                                        style="font-size: 24px; background-color: rgb(249, 241, 202);">耐久：</span><span
-                                        style="font-size: 24px; background-color: rgb(249, 241, 202);">200~250</span><span
-                                        style="color: rgb(23, 26, 29); font-family: &quot;font-size:14px&quot;; background-color: rgb(255, 255, 255);"></span></span>
-                            </td>
-                            <td style="text-align: center;"><img
-                                    src="https://files.originmood.com/pic/83dd60f7543b1a88121a7cbf8581afbc/picture/cb76da526f68c804e666f0a07b858bee.gif"
-                                    alt=""></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </table>
+                </tbody>
+        </table>
         </tbody>
-        </tbody>
-    </table>
-    </tbody>
-    </table>
+        </table>
 </body>
 
 </html>

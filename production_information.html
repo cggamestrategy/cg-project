@@ -75,6 +75,7 @@
 </style>
 
 <body>
+    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">魔力寶貝超強官網</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -87,10 +88,19 @@
                     <!-- 還沒做完 -->
                     <span><a class="nav-link" href="index.html">首頁</a></span>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dropdown">
                     <!-- 做完 -->
-                    <a class="nav-link" href="collect_data.html">採集資料</a>
-
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        採集資料
+                    </a>
+                    <!-- .dropdown-menu 下拉選單內容 -->
+                    <div style="padding: 0; margin:0;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                        <a class="dropdown-item" href="collect_data.html?type=挖礦">挖礦</a>
+                        <a class="dropdown-item" href="collect_data.html?type=狩獵">狩獵</a>
+                        <a class="dropdown-item" href="collect_data.html?type=伐木">伐木</a>
+                        <a class="dropdown-item" href="collect_data.html?type=製作用布販賣點">製作用布販賣點</a>
+                    </div>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -163,6 +173,7 @@
         </div>
     </nav>
 
+
     <!-- 首頁 -->
     <main>
         <div id="title-container" class="d-flex flex-row align-content-start flex-wrap">
@@ -231,13 +242,13 @@
                 <div class="p-2">
                     <label class="btn btn-outline-dark" for="btn-check-outlined1"><a
                             href="production_information.html?type=弓"></a></label><br />
-                <!-- TODO:其他武器還沒有加上去 -->
+                    <!-- TODO:其他武器還沒有加上去 -->
+                </div>
             </div>
-        </div>
 
-        <!-- 劍該出現的東西 -->
+            <!-- 劍該出現的東西 -->
 
-        <!-- 斧該出現的東西 -->
+            <!-- 斧該出現的東西 -->
 
     </main>
 </body>
@@ -281,28 +292,28 @@
             // TODO:未來要加上去的武器資訊都放在這邊新增
             let types = [
                 {
-                    type : "劍",
-                    fileName : "sword.txt"
+                    type: "劍",
+                    fileName: "sword.txt"
                 },
                 {
-                    type : "斧",
-                    fileName : "ax.txt"
+                    type: "斧",
+                    fileName: "ax.txt"
                 },
                 {
-                    type : "槍",
-                    fileName : "spear.txt"
+                    type: "槍",
+                    fileName: "spear.txt"
                 },
                 {
-                    type : "弓",
-                    fileName : "bow.txt"
+                    type: "弓",
+                    fileName: "bow.txt"
                 },
                 {
-                    type : "小刀",
-                    fileName : "knife.txt"
+                    type: "小刀",
+                    fileName: "knife.txt"
                 },
             ];
             let findObject = types.find(object => object.type == type);
-                  
+
             return new Promise((resolve, reject) => {
                 $.ajax({
                     url: folder + findObject.fileName,
@@ -314,9 +325,9 @@
                     }
                 });
             })
-            
+
         }
-        
+
 
         // 物品的計算公式
         async function itemCaculate() {
