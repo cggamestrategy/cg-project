@@ -1,322 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>寵物圖鑑</title>
-  </head>
 
-  <!-- CSS custom -->
-  <link rel="stylesheet" href="search.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-    crossorigin="anonymous"
-  />
-  <!-- JavaScript Bundle with Popper 5.2.2 -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>寵物圖鑑</title>
+</head>
+
+<!-- CSS custom -->
+<link rel="stylesheet" href="search.css" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+  crossorigin="anonymous" />
+<!-- JavaScript Bundle with Popper 5.2.2 -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> -->
 
-  <!-- Bootstrap 4.0.0 -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"
-  />
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
+<!-- Bootstrap 4.0.0 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!-- Jquery & Jquery csv -->
-  <script
-    src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.js"></script>
+<!-- Jquery & Jquery csv -->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.js"></script>
 
-  <!-- Latest compiled and minified CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css"
-  />
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js"></script>
-  <!-- Latest compiled and minified Locales -->
-  <script src="https://unpkg.com/bootstrap-table@1.21.1/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="https://unpkg.com/bootstrap-table@1.21.1/dist/locale/bootstrap-table-zh-CN.min.js"></script>
 
-  <!-- Bootstrap Table -->
-  <!-- <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script> -->
+<!-- Bootstrap Table -->
+<!-- <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script> -->
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">魔力寶貝超強官網</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <!-- 還沒做完 -->
-            <span><a class="nav-link" href="index.html">首頁</a></span>
-          </li>
-          <li class="nav-item">
-            <!-- 做完 -->
-            <a class="nav-link" href="collect_data.html">採集資料</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product_data.html">製作資料</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              技能資料
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pet_information.html">寵物資料</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="role_related.html">角色相關</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="npc_information.html">NPC資料</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="prop_library.html">道具庫</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- 首頁 -->
-    <main>
-      <div class="d-flex flex-row align-content-start flex-wrap">
-        <h2 class="col-5">寵物圖鑑</h2>
-        <div class="search-box col-6">
-          <input
-            class="search-text"
-            type="text"
-            id="search-text"
-            placeholder="搜尋輸入寵物名稱或種族"
-          />
-          <a href="#" id="search-btn" class="search-btn">
-            <i class="fas fa-search"></i>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">魔力寶貝超強官網</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <!-- 還沒做完 -->
+          <span><a class="nav-link" href="index.html">首頁</a></span>
+        </li>
+        <li class="nav-item">
+          <!-- 做完 -->
+          <a class="nav-link" href="collect_data.html">採集資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product_data.html">製作資料</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            技能資料
           </a>
-        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pet_information.html">寵物資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="role_related.html">角色相關</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="npc_information.html">NPC資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="prop_library.html">道具庫</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 首頁 -->
+  <main>
+    <div class="d-flex flex-row align-content-start flex-wrap">
+      <h2 class="col-5">寵物圖鑑</h2>
+      <div class="search-box col-6">
+        <input class="search-text" type="text" id="search-text" placeholder="搜尋輸入寵物名稱或種族" />
+        <a href="#" id="search-btn" class="search-btn">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row align-content-start flex-wrap">
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined1" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined1">野獸系</label><br />
       </div>
 
-      <div class="d-flex flex-row align-content-start flex-wrap">
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined1"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined1"
-            >野獸系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined2"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined2"
-            >不死系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined3"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined3"
-            >飛行系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined4"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined4"
-            >昆蟲系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined5"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined5"
-            >植物系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined6"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined6"
-            >特殊系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined7"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined7"
-            >金屬系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined8"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined8"
-            >龍系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined9"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined9"
-            >人形系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined10"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined10"
-            >邪魔系</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined11"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined11"
-            >改造</label
-          ><br />
-        </div>
-
-        <div class="p-2">
-          <input
-            type="checkbox"
-            name="petGroup"
-            class="btn-check"
-            id="btn-check-outlined12"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-dark" for="btn-check-outlined12"
-            >其他</label
-          ><br />
-        </div>
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined2" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined2">不死系</label><br />
       </div>
-      <div class="card-body" id="card-body"></div>
-    </main>
-  </body>
 
-  <script>
-    let datas = [];
-    let originalDatas = [];
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined3" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined3">飛行系</label><br />
+      </div>
 
-    $.ajax({
-      url: "cat.csv",
-      async: false,
-      success: function (csvd) {
-        originalDatas = $.csv.toArrays(csvd);
-        datas = originalDatas;
-        filterData();
-      },
-      dataType: "text",
-    });
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined4" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined4">昆蟲系</label><br />
+      </div>
 
-    function filterData(keyword = "", filterGroup = []) {
-      $("#card-body").empty();
-      let htmlTableTag = `
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined5" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined5">植物系</label><br />
+      </div>
+
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined6" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined6">特殊系</label><br />
+      </div>
+
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined7" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined7">金屬系</label><br />
+      </div>
+
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined8" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined8">龍系</label><br />
+      </div>
+
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined9" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined9">人形系</label><br />
+      </div>
+
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined10" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined10">邪魔系</label><br />
+      </div>
+
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined11" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined11">改造</label><br />
+      </div>
+
+      <div class="p-2">
+        <input type="checkbox" name="petGroup" class="btn-check" id="btn-check-outlined12" autocomplete="off" />
+        <label class="btn btn-outline-dark" for="btn-check-outlined12">其他</label><br />
+      </div>
+    </div>
+    <div class="card-body" id="card-body"></div>
+  </main>
+</body>
+
+<script>
+  let datas = [];
+  let originalDatas = [];
+
+  $.ajax({
+    url: "cat.csv",
+    async: false,
+    success: function (csvd) {
+      originalDatas = $.csv.toArrays(csvd);
+      datas = originalDatas;
+      filterData();
+    },
+    dataType: "text",
+  });
+
+  function filterData(keyword = "", filterGroup = []) {
+    $("#card-body").empty();
+    let htmlTableTag = `
       <div class="table-responsive">
         <table id="dtBasic" class="table table-responsive table-striped table-bordered table-dark">
           <thead>
@@ -352,28 +217,28 @@
           <tbody>
         `;
 
-      // 分類群組
-      if (filterGroup.length > 0) {
-        let newDatas = [];
+    // 分類群組
+    if (filterGroup.length > 0) {
+      let newDatas = [];
 
-        datas = datas.map(function (data) {
-          filterGroup.some(function (filter) {
-            if (filter.includes(data[3])) newDatas.push(data);
-          });
+      datas = datas.map(function (data) {
+        filterGroup.some(function (filter) {
+          if (filter.includes(data[3])) newDatas.push(data);
         });
-        datas = newDatas;
-      }
+      });
+      datas = newDatas;
+    }
 
-      // 關鍵字搜尋
-      if (keyword != "") {
-        let filterData = datas.filter(function (data) {
-          return (
-            data[2].includes(keyword) == true ||
-            data[3].includes(keyword) == true
-          );
-        });
-        filterData.forEach(function (data, index) {
-          let appendTag = `
+    // 關鍵字搜尋
+    if (keyword != "") {
+      let filterData = datas.filter(function (data) {
+        return (
+          data[2].includes(keyword) == true ||
+          data[3].includes(keyword) == true
+        );
+      });
+      filterData.forEach(function (data, index) {
+        let appendTag = `
               <tr>
                 <td scope="col">#</td>
                 <td scope="col">${data[0]}</td>
@@ -405,13 +270,13 @@
                 <td scope="col">${data[24]}</td>
               </tr>
             `;
-          htmlTableTag += appendTag;
-        });
-      } else {
-        datas.forEach(function (data, index) {
-          if (index == 0 && filterGroup.length <= 0) return;
+        htmlTableTag += appendTag;
+      });
+    } else {
+      datas.forEach(function (data, index) {
+        if (index == 0 && filterGroup.length <= 0) return;
 
-          let appendTag = `
+        let appendTag = `
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">${data[0]}</th>
@@ -443,94 +308,95 @@
                 <th scope="col">${data[24]}</th>
               </tr>
             `;
-          htmlTableTag += appendTag;
-        });
-      }
+        htmlTableTag += appendTag;
+      });
+    }
 
-      let endHtmlTableTag = `
+    let endHtmlTableTag = `
         </tbody>
         </table>
         </div>
         `;
-      htmlTableTag += endHtmlTableTag;
+    htmlTableTag += endHtmlTableTag;
 
-      $("#card-body").append(htmlTableTag);
+    $("#card-body").append(htmlTableTag);
 
-      $("#dtBasic").bootstrapTable({
-        pagination: true,
-        showColumns: true,
-        showRefresh: true,
-        customSort: function (sortName, sortOrder, data) {
-          console.log(sortName, sortOrder, data);
+    $("#dtBasic").bootstrapTable({
+      pagination: true,
+      showColumns: true,
+      showRefresh: true,
+      customSort: function (sortName, sortOrder, data) {
+        console.log(sortName, sortOrder, data);
 
-          var order = sortOrder === "desc" ? -1 : 1;
-          data.sort(function (a, b) {
-            var aa = +(a[sortName] + "").replace(/[^\d]/g, "");
-            var bb = +(b[sortName] + "").replace(/[^\d]/g, "");
-            if (aa < bb) {
-              return order * -1;
-            }
-            if (aa > bb) {
-              return order;
-            }
-            return 0;
-          });
-        },
-        showColumnsToggleAll: true,
-        onPageChange: function (currentPage, pageSize) {
-          console.log(
-            "目前頁數:" + currentPage + ",一頁顯示:" + pageSize + "筆"
-          );
-        },
-        pageSize: 10, //一頁顯示幾筆
-        pageList: [10, 20, 50, 100], //一頁顯示幾筆的選項
-        formatRecordsPerPage: function (pageSize) {
-          return "&nbsp;&nbsp;每頁顯示" + pageSize + "筆";
-        },
-        formatShowingRows: function (fromIndex, toIndex, totalSize) {
-          //目前第幾頁
-          var currentPage = Math.ceil(fromIndex / this.pageSize);
-          //總共幾頁
-          var totalPageCount = Math.ceil(totalSize / this.pageSize);
-          return (
-            "第" + currentPage + "頁&nbsp;&nbsp;共" + totalPageCount + "頁"
-          );
-        },
-      });
-      // $('#dtBasic').DataTable();
+        var order = sortOrder === "desc" ? -1 : 1;
+        data.sort(function (a, b) {
+          var aa = +(a[sortName] + "").replace(/[^\d]/g, "");
+          var bb = +(b[sortName] + "").replace(/[^\d]/g, "");
+          if (aa < bb) {
+            return order * -1;
+          }
+          if (aa > bb) {
+            return order;
+          }
+          return 0;
+        });
+      },
+      showColumnsToggleAll: true,
+      onPageChange: function (currentPage, pageSize) {
+        console.log(
+          "目前頁數:" + currentPage + ",一頁顯示:" + pageSize + "筆"
+        );
+      },
+      pageSize: 10, //一頁顯示幾筆
+      pageList: [10, 20, 50, 100], //一頁顯示幾筆的選項
+      formatRecordsPerPage: function (pageSize) {
+        return "&nbsp;&nbsp;每頁顯示" + pageSize + "筆";
+      },
+      formatShowingRows: function (fromIndex, toIndex, totalSize) {
+        //目前第幾頁
+        var currentPage = Math.ceil(fromIndex / this.pageSize);
+        //總共幾頁
+        var totalPageCount = Math.ceil(totalSize / this.pageSize);
+        return (
+          "第" + currentPage + "頁&nbsp;&nbsp;共" + totalPageCount + "頁"
+        );
+      },
+    });
+    // $('#dtBasic').DataTable();
 
-      datas = originalDatas;
+    datas = originalDatas;
+  }
+
+  $("[name=petGroup]").click(function () {
+    let keyword = $("#search-text").val();
+    let filterGroupDOM = $("[name=petGroup]:checked");
+    let filterGroup = [];
+    for (let i = 0; i < filterGroupDOM.length; i++) {
+      let $dom = $(filterGroupDOM[i]);
+      let content = $dom.next().text();
+      filterGroup.push(content);
     }
+    filterData(keyword, filterGroup);
+  });
 
-    $("[name=petGroup]").click(function () {
+  $("#search-btn").click(function () {
+    let keyword = $("#search-text").val();
+    let filterGroupDOM = $("[name=petGroup]:checked");
+    let filterGroup = [];
+    for (let i = 0; i < filterGroupDOM.length; i++) {
+      let $dom = $(filterGroupDOM);
+      let content = $dom.next().text();
+      filterGroup.push(content);
+    }
+    filterData(keyword, filterGroup);
+  });
+
+  $("#search-text").on("keypress", function (e) {
+    if (e.which === 13) {
       let keyword = $("#search-text").val();
-      let filterGroupDOM = $("[name=petGroup]:checked");
-      let filterGroup = [];
-      for (let i = 0; i < filterGroupDOM.length; i++) {
-        let $dom = $(filterGroupDOM[i]);
-        let content = $dom.next().text();
-        filterGroup.push(content);
-      }
-      filterData(keyword, filterGroup);
-    });
+      filterData(keyword);
+    }
+  });
+</script>
 
-    $("#search-btn").click(function () {
-      let keyword = $("#search-text").val();
-      let filterGroupDOM = $("[name=petGroup]:checked");
-      let filterGroup = [];
-      for (let i = 0; i < filterGroupDOM.length; i++) {
-        let $dom = $(filterGroupDOM);
-        let content = $dom.next().text();
-        filterGroup.push(content);
-      }
-      filterData(keyword, filterGroup);
-    });
-
-    $("#search-text").on("keypress", function (e) {
-      if (e.which === 13) {
-        let keyword = $("#search-text").val();
-        filterData(keyword);
-      }
-    });
-  </script>
 </html>
