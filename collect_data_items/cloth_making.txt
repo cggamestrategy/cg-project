@@ -1,0 +1,175 @@
+<table class="table-light table-bordered style" align="center">
+<tbody><tr>
+<td colspan="5" class="head">維諾亞村：裝備店(62.42) - 布店的小娟(13.6)</td>
+</tr>
+<tr>
+<th>圖示</th>
+<th>名稱</th>
+<th>等級</th>
+<th>價格</th>
+<th>種類</th>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00601.gif"></td>
+<td>絹布</td>
+<td>6</td>
+<td>300G</td>
+<td>布</td>
+</tr>
+</tbody></table>
+<br>
+<table class="table-light table-bordered style" align="center">
+<tbody><tr>
+<td colspan="5" class="head">傑諾瓦鎮：雜貨店(43.23) - 賣布的艾妮(13.11)</td>
+</tr>
+<tr>
+<th>圖示</th>
+<th>名稱</th>
+<th>等級</th>
+<th>價格</th>
+<th>種類</th>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00701.gif"></td>
+<td>莎蓮娜線</td>
+<td>7</td>
+<td>1800G</td>
+<td>布</td>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00801.gif"></td>
+<td>傑諾瓦線</td>
+<td>8</td>
+<td>2160G</td>
+<td>布</td>
+</tr>
+</tbody></table>
+<br>
+<table class="table-light table-bordered style" align="center">
+<tbody><tr>
+<td colspan="5" class="head">阿巴尼斯村：村長家(36.54) - 村長女兒蘿莎利亞(13.4)</td>
+</tr>
+<tr>
+<th>圖示</th>
+<th>名稱</th>
+<th>等級</th>
+<th>價格</th>
+<th>種類</th>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00901.gif"></td>
+<td>細麻布</td>
+<td>9</td>
+<td>2340G</td>
+<td>布</td>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/01001.gif"></td>
+<td>開米士毛線</td>
+<td>10</td>
+<td>3060G</td>
+<td>布</td>
+</tr>
+</tbody></table>
+<br>
+<table class="table-light table-bordered style" align="center">
+<tbody><tr>
+<td colspan="5" class="head">魔法大學：更衣室(29.43) - 賣布商史瓦夫(11.7)</td>
+</tr>
+<tr>
+<th>圖示</th>
+<th>名稱</th>
+<th>等級</th>
+<th>價格</th>
+<th>種類</th>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00601.gif"></td>
+<td>絹布</td>
+<td>6</td>
+<td>300G&nbsp;</td>
+<td>布</td>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00802.gif"></td>
+<td>阿巴尼斯製的線</td>
+<td>8</td>
+<td>800G</td>
+<td>布</td>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00803.gif"></td>
+<td>阿巴尼斯製的布</td>
+<td>8</td>
+<td>800G</td>
+<td>布</td>
+</tr>
+</tbody></table>
+<br>
+<table class="table-light table-bordered style" align="center">
+<tbody><tr>
+<td colspan="5" class="head">亞諾曼城：勝興布莊(129.148) - 布商畢勝(12.12)</td>
+</tr>
+<tr>
+<th>圖示</th>
+<th>名稱</th>
+<th>等級</th>
+<th>價格</th>
+<th>種類</th>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00101.gif"></td>
+<td>麻布</td>
+<td>1</td>
+<td>120G</td>
+<td>布</td>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00201.gif"></td>
+<td>木綿布</td>
+<td>2</td>
+<td>150G</td>
+<td>布</td>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00301.gif"></td>
+<td>毛氈</td>
+<td>3</td>
+<td>174G</td>
+<td>布</td>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00401.gif"></td>
+<td>棉</td>
+<td>4</td>
+<td>198G</td>
+<td>布</td>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00501.gif"></td>
+<td>細線</td>
+<td>5</td>
+<td>240G</td>
+<td>布</td>
+</tr>
+</tbody></table>
+<br>
+<table class="table-light table-bordered style" align="center">
+<tbody><tr>
+<td colspan="5" class="head">艾夏島：防具店(141.114) 2F - 流行商店 - 模特兒可可娜(24.25)</td>
+</tr>
+<tr>
+<th>圖示</th>
+<th>名稱</th>
+<th>等級</th>
+<th>價格</th>
+<th>種類</th>
+</tr>
+<tr>
+<td><img src="image/collect/cutbuy/00101.gif"></td>
+<td>麻布</td>
+<td>1</td>
+<td>90G</td>
+<td>布</td>
+</tr>
+</tbody></table>

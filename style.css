@@ -1,0 +1,16 @@
+
+/* 自己寫的Css */
+main {
+    margin: 0.1em; 
+    padding: 1em;
+}
+main > div {
+    /* margin: 1em  ; */
+}
+
+.dropdown-title {
+    background: #1d1d1d; 
+    padding: 2px; 
+    color:white;
+    text-align: center;
+  }

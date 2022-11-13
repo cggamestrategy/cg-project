@@ -1,0 +1,42 @@
+/*如果螢幕寬度為 768px 以下，就套用 css 設定*/
+    .search-box {
+ 
+        background: #2f3640;
+        height: 60px;
+        border-radius: 40px;
+        padding: 10px;
+        width: 80%;
+        max-width: 240px;
+      }
+
+  
+  
+  .search-btn {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    background: white;
+    color: black;
+  }
+  .search-text {
+    border: none;
+    background: none;
+    outline: none;
+    
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 60%;
+    padding: 0 6px;
+  /*   width: 250px; */
+
+  }

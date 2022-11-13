@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<!-- CSS only -->
+<link rel="stylesheet" href="search.css" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+  crossorigin="anonymous" />
+<!-- JavaScript Bundle with Popper 5.2.2 -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> -->
+
+<!-- Bootstrap 4.0.0 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="https://unpkg.com/bootstrap-table@1.21.1/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+
+
+<link rel="stylesheet" href="bootstrap.scss">
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">魔力寶貝超強官網</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <!-- 還沒做完 -->
+          <span><a class="nav-link" href="index.html">首頁</a></span>
+        </li>
+        <li class="nav-item dropdown">
+          <!-- 做完 -->
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              採集資料
+            </a>
+            <!-- .dropdown-menu 下拉選單內容 -->
+            <div style="padding: 0; margin:0;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+              <a class="dropdown-item" href="collect_data.html?type=挖礦">挖礦</a>
+              <a class="dropdown-item" href="collect_data.html?type=狩獵">狩獵</a>
+              <a class="dropdown-item" href="collect_data.html?type=伐木">伐木</a>
+              <a class="dropdown-item" href="collect_data.html?type=製作用布販賣點">製作用布販賣點</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              製作資料
+            </a>
+            <!-- .dropdown-menu 下拉選單內容 -->
+            <div style="padding: 0; margin:0;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <h6 class="dropdown-title"><b>重型武器-橫掃競技場</b></h6>
+              <a class="dropdown-item" href="production_information.html?type=劍">劍</a>
+              <a class="dropdown-item" href="production_information.html?type=斧">斧</a>
+              <a class="dropdown-item" href="production_information.html?type=槍">槍</a>
+              <a class="dropdown-item" href="production_information.html?type=弓">弓</a>
+              <h6 class="dropdown-title"><b>輕型武器-打爆冰樹</b></h6>
+              <a class="dropdown-item" href="#">小刀</a>
+              <a class="dropdown-item" href="#">杖</a>
+              <a class="dropdown-item" href="#">迴力</a>
+              <h6 class="dropdown-title"><b>重型防具-讓三龍害怕</b></h6>
+              <a class="dropdown-item" href="#">盔</a>
+              <a class="dropdown-item" href="#">鎧甲</a>
+              <a class="dropdown-item" href="#">靴子</a>
+              <a class="dropdown-item" href="#">盾</a>
+              <h6 class="dropdown-title"><b>輕型防具-真的輕</b></h6>
+              <a class="dropdown-item" href="#">帽子</a>
+              <a class="dropdown-item" href="#">衣服</a>
+              <a class="dropdown-item" href="#">鞋子</a>
+              <a class="dropdown-item" href="#">袍</a>
+              <h6 class="dropdown-title"><b>仙丹妙藥</b></h6>
+              <a class="dropdown-item" href="#">料理</a>
+              <a class="dropdown-item" href="#">藥水</a>
+            </div>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            技能資料
+          </a>
+          <!-- .dropdown-menu 下拉選單內容 -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">人物技能</a>
+            <a class="dropdown-item" href="#">人物技能(New)</a>
+            <a class="dropdown-item" href="#">寵物技能</a>
+            <a class="dropdown-item" href="#">技能屋進入証</a>
+            <a class="dropdown-item" href="#">寵物技能屋</a>
+            <a class="dropdown-item" href="#">耗魔變化道具</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pet_information.html">寵物資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="role_related.html">角色相關</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pet_equipment.html">寵物裝備資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="prop_library.html">初心道具</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="game_task.html">遊戲任務</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gashapon_library.html">扭蛋資料</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <h1 class="loader"></h1>
+
+  <style>
+    .loader {
+      font-size: 54px;
+      color: #8ef89c;
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .loader:before {
+      content: '';
+      animation: 5s print linear alternate infinite;
+    }
+
+    .loader:after {
+      content: '';
+      position: absolute;
+      right: -4px;
+      top: 50%;
+      transform: translatey(-45%);
+      width: 2px;
+      height: 1.3em;
+      background: currentColor;
+      opacity: 0.8;
+      animation: 1s blink steps(5) infinite;
+    }
+
+    @keyframes blink {
+      0% {
+        visibility: hidden;
+      }
+
+      100% {
+        visibility: visible;
+      }
+    }
+
+    @keyframes print {
+      8% {
+        content: '魔'
+      }
+
+      16% {
+        content: '魔力'
+      }
+
+      24% {
+        content: '魔力寶'
+      }
+
+      32% {
+        content: '魔力寶貝'
+      }
+
+      40% {
+        content: '魔力寶貝超'
+      }
+
+      48% {
+        content: '魔力寶貝超強'
+      }
+
+      56% {
+        content: '魔力寶貝超強官'
+      }
+
+      64% {
+        content: '魔力寶貝超強官網'
+      }
+
+      72% {
+        content: '魔力寶貝超強官網,'
+      }
+
+      80% {
+        content: '魔力寶貝超強官網,敬'
+      }
+
+      88% {
+        content: '魔力寶貝超強官網,敬請'
+      }
+
+      96% {
+        content: '魔力寶貝超強官網,敬請期'
+      }
+
+      100% {
+        content: '魔力寶貝超強官網,敬請期待'
+      }
+    }
+
+
+    body {
+      background: url('images/body-bg.png') no-repeat #e1faff;
+      background-size: cover;
+      background-position-y: -140%;
+
+    }
+    .dropdown-item:hover {
+      opacity: .4;
+      color: rgb(253, 0, 0);
+    }
+
+    
+  </style>
+
+  <!-- <audio autoplay="true" >
+    <source src="bensound-moose.mp3" type="audio/mpeg"">
+    <p>If audio does not start, the <audio> HTML element is not supported in your browser.</p>
+    </audio> -->
+  <script>
+
+
+
+  </script>
+</body>
+
+</html>
