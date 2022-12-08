@@ -48,7 +48,7 @@
 <body>
   <!-- Header -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">魔力寶貝超強官網</a>
+    <a class="navbar-brand" href="#">魔力寶貝永恆回憶</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -60,7 +60,7 @@
           <span><a class="nav-link" href="index.html">首頁</a></span>
         </li>
         <li class="nav-item dropdown">
-          <!-- 做完 -->
+          <!-- collect_data.html採集資料 -->
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             採集資料
@@ -73,7 +73,6 @@
             <a class="dropdown-item" href="collect_data.html?type=製作用布販賣點">製作用布販賣點</a>
           </div>
         </li>
-
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -89,7 +88,7 @@
             <h6 class="dropdown-title"><b>輕型武器-打爆冰樹</b></h6>
             <a class="dropdown-item" href="production_information.html?type=小刀">小刀</a>
             <a class="dropdown-item" href="production_information.html?type=杖">杖</a>
-            <a class="dropdown-item" href="production_information.html?type=迴力鏢">迴力鏢</a>
+            <a class="dropdown-item" href="production_information.html?type=迴力">迴力</a>
             <h6 class="dropdown-title"><b>重型防具-讓三龍害怕</b></h6>
             <a class="dropdown-item" href="production_information.html?type=盔">盔</a>
             <a class="dropdown-item" href="production_information.html?type=鎧甲">鎧甲</a>
@@ -111,8 +110,9 @@
             技能資料
           </a>
           <!-- .dropdown-menu 下拉選單內容 -->
+          <!-- 還沒做完 -->
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">人物技能</a>
+            <a class="dropdown-item" href="Skill Profile.html">人物技能</a>
             <a class="dropdown-item" href="#">人物技能(New)</a>
             <a class="dropdown-item" href="#">寵物技能</a>
             <a class="dropdown-item" href="#">技能屋進入証</a>
@@ -135,22 +135,54 @@
         <li class="nav-item">
           <a class="nav-link" href="game_task.html">遊戲任務</a>
 
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gashapon_library.html">扭蛋資料</a>
-        </li>
-
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Capsule & change picture" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              扭蛋&改圖
+            </a>
+            <!-- .dropdown-menu 下拉選單內容 -->
+            <!-- 還沒做完 -->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Gacha.txt">扭蛋資訊</a>
+              <a class="dropdown-item" href="wrist wheel.txt">各職業腕輪屬性</a>
+              <a class="dropdown-item" href="Regional Gacha.txt">各地區扭蛋機</a>
+              <a class="dropdown-item" href="Game Makeover.txt">遊戲可 改造寵物</a>
+              <a class="dropdown-item" href="Activity changed to pet">活動可 改造寵物</a>
+              <a class="dropdown-item" href="fragments">變異碎片兌換</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              國家地圖
+            </a>
+            <!-- .dropdown-menu 下拉選單內容 -->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">法蘭王國</a>
+              <a class="dropdown-item" href="#">亞諾曼王國</a>
+              <a class="dropdown-item" href="#">蘇國</a>
+              <a class="dropdown-item" href="#">艾爾巴尼亞國</a>
+              <a class="dropdown-item" href="#">精靈王國</a>
+            </div>
+          </li>
       </ul>
     </div>
+    
   </nav>
-
-
+  <video id="video" width="480" height="315" autoplay="autoplay" muted>
+    <source src="魔力寶貝-樹精長老.mp4" type="video/mp4">
+    
+  </video>
   <h1 class="loader"></h1>
   <main>
-
+    
   </main>
 
   <style>
+    #video {
+      position: absolute;
+      left: 10%;
+    }
     .loader {
       font-size: 54px;
       color: #8ef89c;
@@ -209,39 +241,39 @@
       }
 
       40% {
-        content: '魔力寶貝超'
+        content: '魔力寶貝永'
       }
 
       48% {
-        content: '魔力寶貝超強'
+        content: '魔力寶貝永恆'
       }
 
       56% {
-        content: '魔力寶貝超強官'
+        content: '魔力寶貝永恆回'
       }
 
       64% {
-        content: '魔力寶貝超強官網'
+        content: '魔力寶貝永恆回億'
       }
 
       72% {
-        content: '魔力寶貝超強官網,'
+        content: '魔力寶貝永恆回億,'
       }
 
       80% {
-        content: '魔力寶貝超強官網,敬'
+        content: '魔力寶貝永恆回億,持'
       }
 
       88% {
-        content: '魔力寶貝超強官網,敬請'
+        content: '魔力寶貝超強官網,持續'
       }
 
       96% {
-        content: '魔力寶貝超強官網,敬請期'
+        content: '魔力寶貝超強官網,持續更'
       }
 
       100% {
-        content: '魔力寶貝超強官網,敬請期待'
+        content: '魔力寶貝超強官網,持續更新'
       }
     }
 
@@ -272,7 +304,18 @@
     </audio> -->
   <script>
 
-
+    let videoElem = $('#video')[0];
+      let playAttempt = setInterval(() => {
+  videoElem
+    .play()
+    .then(() => {
+      videoElem.muted = false;
+      clearInterval(playAttempt);
+    })
+    .catch((error) => {
+      console.log("Unable to play the video, User has not interacted yet.");
+    });
+}, 1000);
 
   </script>
 </body>

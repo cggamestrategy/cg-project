@@ -1,0 +1,85 @@
+<table class="table-dark table-bordered style id-g1">
+                <thead>
+                    <tr>
+                        <th>等級</th>
+                        <th>圖/名稱</th>
+                        <th colspan="5">所需材料</th>
+                        <th>能力</th>
+                    </tr>
+                </thead>
+                <tbody id="0">
+                    <tr>
+                        <td width="5%" rowspan="3">1A</td>
+                        <td width="15%"><img src="//ig2.cgs.hk/g/ee/ee257aaed63d575a34ac486cb218b410.png"></td>
+                        <td width="12%" class="quantity"><span>x 4</span><img title="" data-original-title="等級1"
+                                src="//ig2.cgs.hk/g/f0/f0f365d099852428840747a73a839216.png"></td>
+                        <td width="12%" class="quantity"><span>x 20</span><img title="" data-original-title="等級1"
+                                src="//ig2.cgs.hk/g/7d/7db530f21426d1e50efbd75e21f145d2.png"></td>
+                        <td width="12%" class="quantity"></td>
+                        <td width="12%" class="quantity"></td>
+                        <td width="12%" class="quantity"></td>
+                        <td width="20%" rowspan="3">﻿攻擊 12~24<br>耐久 250~300</td>
+                    </tr>
+                    <tr>
+                        <td>長劍</td>
+                        <td>銅條</td>
+                        <td>印度輕木</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>單手劍</td>
+                        <td data-set="40">4</td>
+                        <td data-set="40">20</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="sub">
+                        <td class="head">說明</td>
+                        <td colspan="4">堅固的巨大寬劍</td>
+                        <td colspan="2">製作 x <input type="number" min="1" step="1" value="1"
+                                style="width: 40px;">&nbsp;需物品欄: <span class="slot-result">2</span></td>
+                        <td>販店價: 220G</td>
+                    </tr>
+                </tbody>
+                <tbody id="1">
+                    <tr>
+                        <td width="5%" rowspan="3">1B</td>
+                        <td width="15%"><img src="//ig2.cgs.hk/g/0d/0d7d79520a3d69ea1842980a8191c7f3.png"></td>
+                        <td width="12%" class="quantity"><span>x 4</span><img title="" data-original-title="等級1"
+                                src="//ig2.cgs.hk/g/f0/f0f365d099852428840747a73a839216.png"></td>
+                        <td width="12%" class="quantity"><span>x 3</span><img title="" data-original-title="等級2"
+                                src="//ig2.cgs.hk/g/02/020fbbab819db109a2be80482bb3fbab.png"></td>
+                        <td width="12%" class="quantity"><span>x 20</span><img title="" data-original-title="等級1"
+                                src="//ig2.cgs.hk/g/7d/7db530f21426d1e50efbd75e21f145d2.png"></td>
+                        <td width="12%" class="quantity"></td>
+                        <td width="12%" class="quantity"></td>
+                        <td width="20%" rowspan="3">攻擊 18~36<br>耐久 250~300</td>
+                    </tr>
+                    <tr>
+                        <td>闊劍</td>
+                        <td>銅條</td>
+                        <td>鐵條</td>
+                        <td>印度輕木</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>單手劍</td>
+                        <td data-set="40">4</td>
+                        <td data-set="40">3</td>
+                        <td data-set="40">20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="sub">
+                        <td class="head">說明</td>
+                        <td colspan="4">堅固的寬鐵劍</td>
+                        <td colspan="2">製作 x <input type="number" min="1" step="1" value="1"
+                                style="width: 40px;">&nbsp;需物品欄: <span class="slot-result">3</span></td>
+                        <td>販店價: 280G</td>
+                    </tr>
+                </tbody>
+            </table>

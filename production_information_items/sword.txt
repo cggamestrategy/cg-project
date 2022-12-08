@@ -1004,3 +1004,81 @@
                     </tr>
                 </tbody>
             </table>
+            <table class="table-dark table-bordered style id-g10">
+                <thead>
+                    <tr>
+                        <th>等級</th>
+                        <th>圖/名稱</th>
+                        <th colspan="5">所需材料</th>
+                        <th>能力</th>
+                    </tr>
+                </thead>
+                <tbody id="21">
+                    <tr>
+                        <td width="5%" rowspan="3">10A</td>
+                        <td width="15%"><img src="//ig2.cgs.hk/g/1d/1d27c287128588a5058ea9f9ba60e69d.png"></td>
+                        <td width="12%" class="quantity"><span>x 10</span><img title="" data-original-title="等級5" src="//ig2.cgs.hk/g/2b/2b75d0eda9657063a2f248de36cb942b.png"></td>
+                        <td width="12%" class="quantity"><span>x 10</span><img title="" data-original-title="等級8" src="//ig2.cgs.hk/g/13/13be00ad0a1071626c19228a1291ce0f.png"></td>
+                        <td width="12%" class="quantity"><span>x 10</span><img title="" data-original-title="等級9" src="//ig2.cgs.hk/g/60/6031d52c387ddf3e2bc189e09fd908e0.png"></td>
+                        <td width="12%" class="quantity"><span>x 20</span><img title="" data-original-title="等級8" src="//ig2.cgs.hk/g/c3/c33b9fc931f175f894a4ee5a913cf3d8.png"></td>
+                        <td width="12%" class="quantity"><span>x 20</span><img title="" data-original-title="等級10" src="//ig2.cgs.hk/g/8a/8aa15eefdb53d36c744f823f7b0c112c.png"></td>
+                        <td width="20%" rowspan="3">攻擊 204~240<br>耐久 250~300</td>
+                    </tr>
+                    <tr>
+                        <td>青刀</td>
+                        <td>金條</td>
+                        <td>幻之銀條</td>
+                        <td>勒格耐席鉧條</td>
+                        <td>杉</td>
+                        <td>梣</td>
+                    </tr>
+                    <tr>
+                        <td>單手劍</td>
+                        <td data-set="40">10</td>
+                        <td data-set="40">10</td>
+                        <td data-set="40">10</td>
+                        <td data-set="40">20</td>
+                        <td data-set="40">20</td>
+                    </tr>
+                    <tr class="sub">
+                        <td class="head">說明</td>
+                        <td colspan="4">劍身刻有龍形的單手劍</td>
+                        <td colspan="2">製作 x <input type="number" min="1" step="1" value="1" style="width: 40px;">&nbsp;需物品欄: <span class="slot-result">5</span></td>
+                        <td>販店價: 4500G</td>
+                    </tr>
+                </tbody>
+                <tbody id="22">
+                    <tr>
+                        <td width="5%" rowspan="3">10B</td>
+                        <td width="15%"><img src="//ig2.cgs.hk/g/0a/0a16762023eea1e597da14839986d916.png"></td>
+                        <td width="12%" class="quantity"><span>x 10</span><img title="" data-original-title="等級8" src="//ig2.cgs.hk/g/13/13be00ad0a1071626c19228a1291ce0f.png"></td>
+                        <td width="12%" class="quantity"><span>x 10</span><img title="" data-original-title="等級10" src="//ig2.cgs.hk/g/e2/e201d15f5931df5bc01862677819a46b.png"></td>
+                        <td width="12%" class="quantity"><span>x 20</span><img title="" data-original-title="等級9" src="//ig2.cgs.hk/g/56/56f33540871ff1af06e2983710fdc452.png"></td>
+                        <td width="12%" class="quantity"><span>x 2</span><img title="" data-original-title="等級6" src="//ig2.cgs.hk/g/99/9916acb98754c77d7b10581a128baa8e.png"></td>
+                        <td width="12%" class="quantity"><span>x 2</span><img title="" data-original-title="等級7" src="//ig2.cgs.hk/g/67/675a22ddc04352bba00b004024ad0cf0.png"></td>
+                        <td width="20%" rowspan="3">攻擊 +250<br>敏捷 +1<br>命中 +1<br>閃躲 +1<br>耐久 250~300</td>
+                    </tr>
+                    <tr>
+                        <td>曲刀</td>
+                        <td>幻之銀條</td>
+                        <td>奧利哈鋼條</td>
+                        <td>絲柏</td>
+                        <td>鋼騎之礦</td>
+                        <td>魔族的水晶</td>
+                    </tr>
+                    <tr>
+                        <td>單手劍</td>
+                        <td data-set="40">10</td>
+                        <td data-set="40">10</td>
+                        <td data-set="40">20</td>
+                        <td data-set="10">2</td>
+                        <td data-set="10">2</td>
+                    </tr>
+                    <tr class="sub">
+                        <td class="head">說明</td>
+                        <td colspan="4">需要力量大的人才拿的動的超巨劍</td>
+                        <td colspan="2">製作 x <input type="number" min="1" step="1" value="1" style="width: 40px;">&nbsp;需物品欄: <span class="slot-result">5</span></td>
+                        <td>販店價: 6000G</td>
+                    </tr>
+                </tbody>
+            </table>
